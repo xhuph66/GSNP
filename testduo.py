@@ -136,7 +136,7 @@ for i in range(10):
 	print(train_scaled)
 	train_reshaped = train_scaled[:, 0].reshape(len(train_scaled), 1, 1)
 	print(train_reshaped)
-	# Use the constructed network model for prediction training
+	# Use the constructed network model for prediction training#
 # lstm_model.predict(train_reshaped, batch_size=1)
 # print(lstm_model.predict(train_reshaped, batch_size=1))
 # Traverse the test data and make a single-step prediction on the data
