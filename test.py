@@ -71,7 +71,7 @@ def invert_scale(scaler, X, y):
 	inverted = scaler.inverse_transform(array)
 	return inverted[0, -1]
 
-# Build an LSTM network model and train it
+# #Build an LSTM network model and train it
 # batch_size How many numbers are taken from the training set each time nb_epoch: training times
 def fit_lstm(train, batch_size, nb_epoch, neurons):
     # Split X, y in the data pair, the shape is [23*1]
