@@ -13,7 +13,7 @@ from matplotlib import pyplot
 import numpy as np
 
 """
-Single-step forecasting refers to predicting one piece of data at a time
+#Single-step forecasting refers to predicting one piece of data at a time
 Input all training data during training,
 When predicting, get the trained model, input a data X each time, and predict the corresponding
 """
