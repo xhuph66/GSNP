@@ -771,7 +771,7 @@ class GSNPCell(Recurrent):
                                           self.recurrent_kernel_r))
             c = self.recurrent_activation(x_c + K.dot(u_tm1 * rec_dp_mask[1],
                                           self.recurrent_kernel_c))
-            a = self.activation(x_a + K.dot(r * u_tm1 * rec_dp_mask[2],
+            a = self.activation(x_a + K.dot(u_tm1 * rec_dp_mask[2],
                                 self.recurrent_kernel_a))
         h = r * u_tm1 - c * a
         if 0 < self.dropout + self.recurrent_dropout:
